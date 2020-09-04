@@ -48,7 +48,7 @@ def get_fpkm(gene_list, col_sum, gen_len, header):
 			new_row += str(k)
 			p =1
 			for num in v:
-				fpkm = (int(num) * 100000000/(int(col_sum[p]) * int(gen_len[k])))
+				fpkm = (int(num) * 1000000000/(int(col_sum[p]) * int(gen_len[k])))
 				new_row += '\t' + str(fpkm)
 				p +=1
 		print(new_row)
