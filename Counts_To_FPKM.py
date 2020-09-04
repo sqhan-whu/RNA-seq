@@ -1,3 +1,5 @@
+## usage: python Counts_To_FPKM.py HTSeq.table.txt ~/project/project/00.DATABASE/hg38/Annotation/gencode.v31.gene_length.txt > out.fpkm.txt
+
 from sys import argv
 import pandas as pd
 pd.set_option('display.max_rows',None)
